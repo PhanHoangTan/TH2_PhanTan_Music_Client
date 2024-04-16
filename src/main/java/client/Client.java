@@ -27,7 +27,7 @@ public class Client {
                         String genre = scanner.next();
                         System.out.println("Enter year: ");
                         int year = scanner.nextInt();
-                        albumDao.listAlbumByGenre(genre, year).forEach(System.out::println);
+                        albumDao.listAlbumByGenre("Pop", 2018).forEach(System.out::println);
                         break;
                     case 2:
                         System.out.println("Enter album id: ");
